@@ -2,7 +2,7 @@
 
 **The Residual Stream Is All You Need: On the Redundancy of the KV Cache in Transformer Inference**
 
-Kaleem Ullah Qasim, Jiashu Zhang, Muhammad Kafeel Shaheen, Muhammad Waqas Aslam
+Kaleem Ullah Qasim, Jiashu Zhang, Muhammad Kafeel Shaheen, Razan Alharith
 
 Southwest Jiaotong University
 
