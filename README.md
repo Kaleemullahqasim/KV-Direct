@@ -15,7 +15,7 @@ During autoregressive decoding, the key-value (KV) cache stores precomputed keys
 ## Method
 
 <p align="center">
-  <img src="MethodDiagram.jpg" alt="KV-Direct Method Diagram" width="100%">
+  <img src="MethodDiagram.png" alt="KV-Direct Method Diagram" width="100%">
 </p>
 
 **Three inference regimes compared.** *(Left)* Standard KV cache: stores all K/V pairs, memory grows as O(T) with sequence length. *(Centre)* Sliding window eviction: bounds memory to the last B tokens but permanently discards evicted KV entries. *(Right)* KV-Direct: evicted KV entries are replaced by residual stream checkpoints (5 KB/token for a 4B model), from which exact K and V are recomputed on the fly, achieving bounded memory with 100% token match.
